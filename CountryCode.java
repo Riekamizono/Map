@@ -10,12 +10,13 @@ public class CountryCode {
 			put(41, "スイス連邦");
 			put(27, "南アフリカ共和国");
 			put(91, "インド");
+			put(60, "マレーシア");
 		}
 	};
 
 	public static void main(String[] args) {
 		try {
-			System.out.println(findCountryCode(1));
+			System.out.println(findCountryCode(3));
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
