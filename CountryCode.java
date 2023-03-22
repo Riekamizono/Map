@@ -2,7 +2,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class CountryCode {
-	public static Map<Integer, String> CountryCode = new HashMap<>() {
+	public static Map<Integer, String> countryCode = new HashMap<>() {
 		{
 			put(81, "日本");
 			put(64, "ニュージーランド");
@@ -23,7 +23,7 @@ public class CountryCode {
 	}
 
 	public static String findCountryCode(int code) throws Exception {
-		String countryName = CountryCode.get(code);
+		String countryName = countryCode.get(code);
 		if (countryName == null) {
 			throw new Exception("no country found. code: " + code);
 		}
